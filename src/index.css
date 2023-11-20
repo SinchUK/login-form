@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.App {
+    padding: 0px 5px;
+    width: 1600px;
+    height: 100vh;
+    background-color: #00523f;
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.app_bg-figure {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 55px;
+    z-index: 1;
+}
+
+.app_bg-lamp-in {
+    position: absolute;
+    left: 90px;
+    top: -80px;
+    z-index: 2;
+    width: 154px;
+    height: 337px;
+}
+
+.app_block-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.app_block-img {
+    z-index: 2;
+}
+
+.app_bg-ellipse {
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    left: 30px;
+}
+
+.login_label {
+    padding: 10px 60px;
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    border-radius: 5px;
+    background-color: #ffc42a;
+    color: white;
+    font-family: "Roboto";
+    z-index: 3;
+}
+
+.login_label span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.error {
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 5px;
+    height: 15px;
+}
+
+.logout_logo {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1440px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 979px) {
+    .app_bg-figure {
+        height: 70%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .App {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .app_bg-lamp-in {
+        width: 100px;
+        height: 255px;
+    }
+    .app_bg-ellipse {
+        top: 50px;
+        left: 7px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .app_bg-figure {
+        height: 50%;
+    }
+    .app_block-login {
+        padding: 0px 10px 0px;
+        margin-top: 125px;
+    }
+    .App {
+        /* height: 100%; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .app_block-img img {
+        width: 260px;
+        height: 280px;
+    }
+    .login_label {
+        right: 40px;
+        top: 20px;
+    }
+    .sign_up-block {
+        margin-top: 125px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .app_bg-ellipse {
+        top: 30px;
+        left: -75px;
+    }
+    .app_bg-lamp-in {
+        left: 20px;
+        width: 80px;
+        height: 235px;
+    }
+    .app_bg-figure {
+        height: 40%;
+    }
 }
