@@ -1,5 +1,4 @@
 import LoginForm from "./components/LoginForm/LoginForm";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { bg, logout } from "./assets/img";
 import { useState } from "react";
 
@@ -22,25 +21,12 @@ function App() {
                     )}
                 </span>
             </div>
-            <BrowserRouter>
-                <Routes>
-                    <Route
-                        path="/"
-                        element={
-                            <LoginForm
-                                usersData={usersData}
-                                setUsersData={setUsersData}
-                                isLogin={isLogin}
-                                setIsLogin={setIsLogin}
-                            />
-                        }
-                    />
-                    {/* <Route
-                        path="/registration"
-                        element={<RegisterForm usersData={usersData} />}
-                    /> */}
-                </Routes>
-            </BrowserRouter>
+            <LoginForm
+                usersData={usersData}
+                setUsersData={setUsersData}
+                isLogin={isLogin}
+                setIsLogin={setIsLogin}
+            />
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import { ellipse, lampIn, manIn } from "../../assets/img";
+import { ellipse, lampIn, manIn, manOut } from "../../assets/img";
 
 import "./loginForm.css";
 import { useEffect, useState } from "react";
@@ -176,7 +176,7 @@ const LoginForm = ({ setIsLogin, isLogin, usersData, setUsersData }) => {
                 </div>
             </div>
             <div className="app_block-img">
-                <img src={manIn} alt="" />
+                <img src={isLogin ? `${manOut}` : `${manIn}`} alt="" />
             </div>
         </>
     );
