@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/login-form/static/css/main.5d49d56b.css",
-    "main.js": "/login-form/static/js/main.c9240acf.js",
+    "main.css": "/login-form/static/css/main.15cad619.css",
+    "main.js": "/login-form/static/js/main.f524e2d4.js",
     "static/media/man_out.png": "/login-form/static/media/man_out.f96639e4ba9ceab425f8.png",
     "static/media/man_in.png": "/login-form/static/media/man_in.0d7759fe0388d2bfdd06.png",
     "static/media/lamp_in.png": "/login-form/static/media/lamp_in.228e989364b6961aaa43.png",
@@ -10,11 +10,11 @@
     "static/media/logout.svg": "/login-form/static/media/logout.190d0acc668b87247325418f58f9cba6.svg",
     "static/media/ellipse.svg": "/login-form/static/media/ellipse.6963147e3fa9c776ed97d83e1b2bae6f.svg",
     "static/media/bg.svg": "/login-form/static/media/bg.9b7f5e9bb079345d73bc22689cbee996.svg",
-    "main.5d49d56b.css.map": "/login-form/static/css/main.5d49d56b.css.map",
-    "main.c9240acf.js.map": "/login-form/static/js/main.c9240acf.js.map"
+    "main.15cad619.css.map": "/login-form/static/css/main.15cad619.css.map",
+    "main.f524e2d4.js.map": "/login-form/static/js/main.f524e2d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d49d56b.css",
-    "static/js/main.c9240acf.js"
+    "static/css/main.15cad619.css",
+    "static/js/main.f524e2d4.js"
   ]
 }
